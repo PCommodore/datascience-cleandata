@@ -3,16 +3,15 @@
 
 ###Step 1
 
-datatrainX=read.table("~/Desktop/repos/datascience-cleandata/HAR-Dataset/train/X_train.txt")
-datatrainY=read.table("~/Desktop/repos/datascience-cleandata/HAR-Dataset/train/y_train.txt")
-datatrainSub=read.table("~/Desktop/repos/datascience-cleandata/HAR-Dataset/train/subject_train.txt")
+datatrainX=read.table("./HAR-Dataset/train/X_train.txt")
+datatrainY=read.table("./HAR-Dataset/train/y_train.txt")
+datatrainSub=read.table("./HAR-Dataset/train/subject_train.txt")
 
+datatestX=read.table("./HAR-Dataset/test/X_test.txt")
+datatestY=read.table("./HAR-Dataset/test/y_test.txt")
+datatestSub=read.table("./HAR-Dataset/test/subject_test.txt")
 
-datatestX=read.table("~/Desktop/repos/datascience-cleandata/HAR-Dataset/test/X_test.txt")
-datatestY=read.table("~/Desktop/repos/datascience-cleandata/HAR-Dataset/test/y_test.txt")
-datatestSub=read.table("~/Desktop/repos/datascience-cleandata/HAR-Dataset/test/subject_test.txt")
-
-features=read.table("~/Desktop/repos/datascience-cleandata/HAR-Dataset/features.txt")
+features=read.table("./HAR-Dataset/features.txt")
 
 colnames(datatrainSub)=c("Subject")
 colnames(datatrainX)=features$V2
